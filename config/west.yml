@@ -4,6 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: refil
       url-base: https://github.com/refil
+    - name: leonb
+      url-base: https://github.com/LeonB
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: refil
