@@ -19,10 +19,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include "keypos_adv360.h"
 
-#define HYPR LC(RS(LA(LGUI)))
-#define HY(KC) LC(RS(LA(LG(KC))))
-#define MEH LC(RS(LALT))
-
 // https://zmk.dev/docs/behaviors/caps-word
 &caps_word {
   continue-list = <UNDERSCORE MINUS>;
@@ -159,9 +155,9 @@
     nav {
       bindings = <
         &trans &trans    &trans    &trans    &trans    &trans    &trans                                                &trans &trans    &trans    &trans    &trans    &trans    &trans
-        &trans &kp HY(Q) &kp HY(W) &kp HY(E) &kp HY(R) &kp HY(T) &trans                                                &trans &kp HY(Y) &kp HY(U) &kp HY(I) &kp HY(O) &kp HY(P) &trans
-        &trans &kp HY(A) &kp HY(S) &kp HY(D) &kp HY(F) &kp HY(G) &trans        &trans &trans /**/ &trans &trans        &trans &kp HY(H) &at_f     &kp LS(TAB)   &kp HY(L) &kp HY(L) &trans
-        &trans &kp HY(Z) &kp HY(X) &kp HY(C) &kp HY(V) &kp HY(B)                      &trans /**/ &trans                      &kp HY(N) &kp HY(M) &trans    &trans    &trans    &trans
+        &trans &kp LC(RS(LA(LG(Q)))) &kp LC(RS(LA(LG(W)))) &kp LC(RS(LA(LG(E)))) &kp LC(RS(LA(LG(R)))) &kp LC(RS(LA(LG(T)))) &trans                                                &trans &kp LC(RS(LA(LG(Y)))) &kp LC(RS(LA(LG(U)))) &kp LC(RS(LA(LG(I)))) &kp LC(RS(LA(LG(O)))) &kp LC(RS(LA(LG(P)))) &trans
+        &trans &kp LC(RS(LA(LG(A)))) &kp LC(RS(LA(LG(S)))) &kp LC(RS(LA(LG(D)))) &kp LC(RS(LA(LG(F)))) &kp LC(RS(LA(LG(G)))) &trans        &trans &trans /**/ &trans &trans        &trans &kp LC(RS(LA(LG(H)))) &at_f     &kp LS(TAB)   &kp LC(RS(LA(LG(L)))) &kp LC(RS(LA(LG(L)))) &trans
+        &trans &kp LC(RS(LA(LG(Z)))) &kp LC(RS(LA(LG(X)))) &kp LC(RS(LA(LG(C)))) &kp LC(RS(LA(LG(V)))) &kp LC(RS(LA(LG(B))))                      &trans /**/ &trans                      &kp LC(RS(LA(LG(N)))) &kp LC(RS(LA(LG(M)))) &trans    &trans    &trans    &trans
         &trans &trans    &trans    &trans    &trans                     &trans &trans &trans /**/ &trans &trans &trans                  &trans    &trans    &trans    &trans    &trans
       >;
     };
