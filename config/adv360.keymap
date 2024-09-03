@@ -26,6 +26,7 @@
 // #define K_RALT  &hmr RALT  K
 // #define L_RCTRL &hmr RCTRL L
 
+#define SUPER(X) &kp LC(RS(LA(LG(X))))
 #define A_HM    &hml LCTRL A
 #define S_HM    &hml LALT  S
 #define D_HM    &hml LGUI  D
@@ -171,10 +172,10 @@
         nav {
             bindings = <
 &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans                                      &trans  &trans                 &trans                 &trans                 &trans                 &trans                 &trans
-&trans  &kp LC(RS(LA(LG(Q))))  &kp LC(RS(LA(LG(W))))  &kp LC(RS(LA(LG(E))))  &kp LC(RS(LA(LG(R))))  &kp LC(RS(LA(LG(T))))  &trans                                      &trans  &kp LC(RS(LA(LG(Y))))  &kp LC(RS(LA(LG(U))))  &kp LC(RS(LA(LG(I))))  &kp LC(RS(LA(LG(O))))  &kp LC(RS(LA(LG(P))))  &trans
-&trans  &kp LC(RS(LA(LG(A))))  &kp LC(RS(LA(LG(S))))  &kp LC(RS(LA(LG(D))))  &kp LC(RS(LA(LG(F))))  &kp LC(RS(LA(LG(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LC(RS(LA(LG(H))))  &trans                  &trans            &kp LC(RS(LA(LG(L))))  &kp LC(RS(LA(LG(L))))  &trans
-&trans  &kp LC(RS(LA(LG(Z))))  &kp LC(RS(LA(LG(X))))  &kp LC(RS(LA(LG(C))))  &kp LC(RS(LA(LG(V))))  &kp LC(RS(LA(LG(B))))                  &trans      &trans                  &kp LC(RS(LA(LG(N))))  &kp LC(RS(LA(LG(M))))  &trans                 &trans                 &trans                 &trans
-&trans  &trans                 &trans                 &trans                 &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
+&trans  SUPER(Q)               SUPER(W)               SUPER(E)               SUPER(R)               SUPER(T)               &trans                                      &trans  SUPER(Y)               SUPER(U)               SUPER(I)               SUPER(O)               SUPER(P)               &trans
+&trans  SUPER(A)               SUPER(S)               SUPER(D)               SUPER(F)               SUPER(G)               &trans  &trans  &trans      &trans  &trans  &trans  SUPER(H)               &trans                 &trans                 SUPER(L)               SUPER(L)               &trans
+&trans  SUPER(Z)               SUPER(X)               SUPER(C)               SUPER(V)               SUPER(B)                               &trans      &trans                  SUPER(N)               SUPER(M)               &trans                 &trans                 &trans                 &trans
+&trans  &trans                 &trans                 SUPER(LEFT)            SUPER(RIGHT)                                  &trans  &trans  &trans      &trans  &trans  &trans                         &trans                 &trans                 &trans                 &trans                 &trans
             >;
         };
 
